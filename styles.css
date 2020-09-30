@@ -1,0 +1,21 @@
+.background {
+    background-color:#0f4c81;
+}
+.navbar-expand-lg {
+    background-color:#92949b;
+}
+.container-md {
+    background-color:#0f4c81;
+    flex: auto;
+}
+.time {
+    text-align: right;
+}
+#downCounter {
+    margin: 0;
+    padding: 0;
+}
+
+#time {
+    float: right;
+}
