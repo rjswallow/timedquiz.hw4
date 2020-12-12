@@ -16,13 +16,25 @@ function start() {
             span = document.getElementById("count");
             span.innerHTML = counter;
         }
-        if (counter === 0) {
+        if (counter <= 0) {
             alert('sorry, out of time');
             clearInterval(counter);
         }
     }, 1000);
 
 };
+
+function endGame() {
+    alert('sorry, out of time')
+    span = document.getElementById("scoreDisplay");
+    nameBox = document.getElementById("nameBox");
+    span.innerHTML = scoreCount;
+    if (nameBox.style.display === "none") {
+        nameBox.style.display = "block";
+    } else {
+        nameBox.style.display = "none";
+    }
+}
 
 // function to hide start button when clicked
 function hide() {
